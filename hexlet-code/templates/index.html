@@ -1,67 +1,7 @@
-{% load static %}
-{% load i18n %}
-<!doctype html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <title>Менеджер Задач - Main</title>
+{% extends "base.html" %}
 
-<!-- Bootstrap core CSS -->
-<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+{% block title %}Менеджер задач - Главная{% endblock %}
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="{% static 'css/headers.css' %}" rel="stylesheet">
-  </head>
-  <body>
-
-
-<main>
-
-<div class="container">
-  <header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 border-bottom">
-
-    <!-- Левая часть: заголовок -->
-    <a href="/" class="d-flex align-items-center mb-2 mb-md-0 text-dark text-decoration-none">
-      <span class="fs-4">{% trans "Task Manager" %}</span>
-    </a>
-
-    <!-- Центр: кнопка "Пользователи" -->
-    <ul class="nav mb-2 mb-md-0">
-      <li><a href="#" class="nav-link px-2 link-dark">{% trans "Users" %}</a></li>
-    </ul>
-
-    <!-- Правая часть: Вход и Регистрация -->
-    <div class="text-end">
-      <button type="button" class="btn btn-outline-primary me-2">{% trans "Login" %}</button>
-      <button type="button" class="btn btn-primary">{% trans "Register" %}</button>
-    </div>
-
-  </header>
-</div>
-
-</main>
-
-
-    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-
-  </body>
-</html>
+{% block content %}
+  <h1>Главная страница</h1>
+{% endblock %}
