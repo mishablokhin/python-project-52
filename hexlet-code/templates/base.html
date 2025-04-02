@@ -35,12 +35,12 @@
           <!-- Кнопки входа, выхода, регистрации -->
           <div class="text-end">
             {% if user.is_authenticated %}
-              <form method="post" action="" class="d-inline">
+              <form method="post" action="{% url 'logout' %}" class="d-inline">
                 {% csrf_token %}
                 <button type="submit" class="btn btn-outline-danger">{% trans "Logout" %}</button>
               </form>
             {% else %}
-              <a href="" class="btn btn-outline-primary me-2">{% trans "Login" %}</a>
+              <a href="{% url 'login' %}" class="btn btn-outline-primary me-2">{% trans "Login" %}</a>
               <a href="" class="btn btn-primary">{% trans "Register" %}</a>
             {% endif %}
           </div>
