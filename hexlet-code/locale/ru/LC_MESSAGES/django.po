@@ -28,18 +28,56 @@ msgstr ""
 msgid "Russian"
 msgstr ""
 
-#: hexlet-code/templates/index.html:44
+#: hexlet-code/templates/base.html
 msgid "Task Manager"
 msgstr "Менеджер задач"
 
-#: hexlet-code/templates/index.html:49
 msgid "Users"
 msgstr "Пользователи"
 
-#: hexlet-code/templates/index.html:54
 msgid "Login"
 msgstr "Вход"
 
-#: hexlet-code/templates/index.html:55
 msgid "Register"
 msgstr "Регистрация"
+
+msgid "Statuses"
+msgstr "Статусы"
+
+msgid "Labels"
+msgstr "Метки"
+
+msgid "Tasks"
+msgstr "Задачи"
+
+msgid "Logout"
+msgstr "Выход"
+
+msgid "You don't have permission to edit another user."
+msgstr "У вас нет прав для изменения другого пользователя."
+
+msgid "You don't have permission to delete another user."
+msgstr "У вас нет прав для удаления другого пользователя."
+
+#: hexlet-code/templates/user_list.html
+msgid "Edit"
+msgstr "Изменить"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid "Full name"
+msgstr "Полное имя"
+
+msgid "Created at"
+msgstr "Дата создания"
+
+#: hexlet-code/templates/user_confirm_delete.html
+msgid "Delete user"
+msgstr "Удаление пользователя"
+
+msgid "Are you sure you want to delete user"
+msgstr "Вы уверены, что хотите удалить пользователя"
