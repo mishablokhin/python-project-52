@@ -81,3 +81,10 @@ msgstr "Удаление пользователя"
 
 msgid "Are you sure you want to delete user"
 msgstr "Вы уверены, что хотите удалить пользователя"
+
+#: hexlet-code/templates/index.html
+msgid "This project is a simple web application for managing users, statuses, labels, and tasks. Register, log in, and start organizing your work!"
+msgstr "Этот проект — простое веб-приложение для управления пользователями, статусами, метками и задачами. Зарегистрируйтесь, войдите в систему и начните упорядочивать свою работу!"
+
+msgid "Welcome to Task Manager"
+msgstr "Добро пожаловать в Менеджер Задач"

@@ -30,3 +30,6 @@ compile-locale:
 
 lint:
 	uv run flake8 hexlet-code/task_manager
+
+test:
+	PYTHONPATH=hexlet-code .venv/bin/pytest --ds=task_manager.settings --cov=hexlet-code --cov-report=term-missing
