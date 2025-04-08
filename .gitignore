@@ -7,3 +7,4 @@ staticfiles/
 db.sqlite3
 .coverage
 dump.rdb
+.pytest_cache

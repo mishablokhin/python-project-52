@@ -88,3 +88,37 @@ msgstr "Этот проект — простое веб-приложение д�
 
 msgid "Welcome to Task Manager"
 msgstr "Добро пожаловать в Менеджер Задач"
+
+#: hexlet-code/statuses
+msgid "Delete status"
+msgstr "Удаление статуса"
+
+msgid "Are you sure you want to delete status"
+msgstr "Вы уверены, что хотите удалить статус?"
+
+msgid "Status created successfully."
+msgstr "Статус успешно создан"
+
+msgid "Status updated successfully."
+msgstr "Статус успешно обновлён"
+
+msgid "Status deleted successfully."
+msgstr "Статус успешно удалён"
+
+msgid "Cannot delete status because it is in use."
+msgstr "Невозможно удалить статус, потому что он используется"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "Create status"
+msgstr "Создать статус"
+
+msgid "Create"
+msgstr "Создать"
+
+msgid "Update status"
+msgstr "Изменение статуса"
+
+msgid "Update"
+msgstr "Изменить"
