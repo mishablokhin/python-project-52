@@ -1,0 +1,28 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "author",
+      "password": "pbkdf2_sha256$600000$test$7JpOADLE7hGCx6tEjKJ3aSyLy2o2qklvnBYYgFDnMto=",
+      "is_active": true
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "username": "otheruser",
+      "password": "pbkdf2_sha256$600000$test$7JpOADLE7hGCx6tEjKJ3aSyLy2o2qklvnBYYgFDnMto=",
+      "is_active": true
+    }
+  },
+  {
+    "model": "statuses.status",
+    "pk": 1,
+    "fields": {
+      "name": "In progress",
+      "created_at": "2025-01-01T12:00:00Z"
+    }
+  }
+]

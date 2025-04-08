@@ -122,3 +122,43 @@ msgstr "Изменение статуса"
 
 msgid "Update"
 msgstr "Изменить"
+
+#: hexlet-code/tasks
+msgid "Are you sure you want to delete task"
+msgstr "Вы уверены, что хотите удалить задачу"
+
+msgid "Create task"
+msgstr "Создать задачу"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Author"
+msgstr "Автор"
+
+msgid "Executor"
+msgstr "Исполнитель"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Edit task"
+msgstr "Изменение задачи"
+
+msgid "Delete task"
+msgstr "Удаление задачи"
+
+msgid "Task created successfully."
+msgstr "Задача успешно создана."
+
+msgid "Task updated successfully."
+msgstr "Задача успешно обновлена."
+
+msgid "Task deleted successfully."
+msgstr "Задача успешно удалена."
+
+msgid "Task could be deleted only by it's author."
+msgstr "Задачу может удалить только её автор."
+
+msgid "Task details"
+msgstr "Просмотр задачи"

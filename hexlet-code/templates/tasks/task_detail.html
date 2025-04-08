@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+  <h1 class="my-4">{% trans "Task details" %}</h1>
+
+  <div class="card my-4 shadow-sm">
+    <div class="card-header bg-primary text-white">
+      <h2 class="mb-0">{{ task.name }}</h2>
+    </div>
+    <div class="card-body">
+      <p class="card-text">
+        <strong>{% trans "Description" %}:</strong><br>
+        {{ task.description|default:_("No description") }}
+      </p>
+      <hr>
+      <dl class="row mb-0">
+        <dt class="col-sm-3">{% trans "Status" %}:</dt>
+        <dd class="col-sm-9">{{ task.status.name }}</dd>
+
+        <dt class="col-sm-3">{% trans "Author" %}:</dt>
+        <dd class="col-sm-9">{{ task.author.get_full_name|default:task.author.username }}</dd>
+
+        <dt class="col-sm-3">{% trans "Executor" %}:</dt>
+        <dd class="col-sm-9">{{ task.executor.get_full_name|default:task.executor.username }}</dd>
+      </dl>
+    </div>
+    <div class="card-footer text-end">
+      <a href="{% url 'task_update' task.pk %}" class="btn btn-outline-primary me-2">{% trans "Edit" %}</a>
+      <a href="{% url 'task_delete' task.pk %}" class="btn btn-outline-danger">{% trans "Delete" %}</a>
+    </div>
+  </div>
+{% endblock %}
