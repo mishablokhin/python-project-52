@@ -2,6 +2,7 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse_lazy
 from django.contrib import messages
+from django.shortcuts import redirect
 from django.utils.translation import gettext_lazy as _
 from .models import Task
 from .forms import TaskForm
@@ -62,15 +63,15 @@ class TaskDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     def handle_no_permission(self):
         messages.error(
             self.request,
-            _("Task could be deleted only by it's author."),
+            _("Task could be deleted only by its author."),
             extra_tags='alert-danger'
         )
-        return HttpResponseRedirect(reverse_lazy('task_list'))
+        return redirect('task_list')
 
-    def delete(self, request, *args, **kwargs):
+    def post(self, request, *args, **kwargs):
         messages.success(
             self.request,
             _('Task deleted successfully.'),
             extra_tags='alert-success'
         )
-        return super().delete(request, *args, **kwargs)
+        return super().post(request, *args, **kwargs)

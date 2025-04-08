@@ -82,6 +82,12 @@ msgstr "Удаление пользователя"
 msgid "Are you sure you want to delete user"
 msgstr "Вы уверены, что хотите удалить пользователя"
 
+msgid "Cannot delete user because it is in use."
+msgstr "Невозможно удалить пользователя, потому что он используется."
+
+msgid "User deleted successfully."
+msgstr "Пользователь успешно удалён"
+
 #: hexlet-code/templates/index.html
 msgid "This project is a simple web application for managing users, statuses, labels, and tasks. Register, log in, and start organizing your work!"
 msgstr "Этот проект — простое веб-приложение для управления пользователями, статусами, метками и задачами. Зарегистрируйтесь, войдите в систему и начните упорядочивать свою работу!"

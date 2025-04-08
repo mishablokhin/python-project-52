@@ -6,6 +6,7 @@ from .forms import CustomUserCreationForm, CustomUserChangeForm
 from django.contrib import messages
 from django.utils.translation import gettext as _
 from django.shortcuts import redirect
+from django.db.models import ProtectedError
 
 
 class UserListView(ListView):
@@ -54,3 +55,20 @@ class UserDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
             extra_tags='alert-danger'
         )
         return redirect('user_list')
+
+    def post(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        try:
+            self.object.delete()
+            messages.success(
+                request,
+                _("User deleted successfully."),
+                extra_tags='alert-success'
+            )
+        except ProtectedError:
+            messages.error(
+                request,
+                _("Cannot delete user because it is in use."),
+                extra_tags='alert-danger'
+            )
+        return redirect(self.success_url)
