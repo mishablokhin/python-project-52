@@ -23,6 +23,15 @@
 
         <dt class="col-sm-3">{% trans "Executor" %}:</dt>
         <dd class="col-sm-9">{{ task.executor.get_full_name|default:task.executor.username }}</dd>
+
+        <dt class="col-sm-3">{% trans "Labels" %}:</dt>
+        <dd class="col-sm-9">
+          {% for label in task.labels.all %}
+            <span class="badge bg-info text-dark">{{ label.name }}</span>
+          {% empty %}
+            <span class="text-muted">{% trans "No labels" %}</span>
+          {% endfor %}
+        </dd>
       </dl>
     </div>
     <div class="card-footer text-end">

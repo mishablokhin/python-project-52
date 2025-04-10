@@ -1,0 +1,18 @@
+[
+  {
+    "model": "labels.label",
+    "pk": 1,
+    "fields": {
+      "name": "Метка 1",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "labels.label",
+    "pk": 2,
+    "fields": {
+      "name": "Метка 2",
+      "created_at": "2024-01-02T12:00:00Z"
+    }
+  }
+]

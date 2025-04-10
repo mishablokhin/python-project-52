@@ -168,3 +168,31 @@ msgstr "Задачу может удалить только её автор."
 
 msgid "Task details"
 msgstr "Просмотр задачи"
+
+#: hexlet-code/labels
+msgid "Create label"
+msgstr "Создать метку"
+
+msgid "Edit label"
+msgstr "Изменение метки"
+
+msgid "Delete label"
+msgstr "Удаление метки"
+
+msgid "Are you sure you want to delete label"
+msgstr "Вы уверены, что хотите удалить метку"
+
+msgid "No labels"
+msgstr "Нет меток"
+
+msgid "Label created successfully."
+msgstr "Метка успешно создана."
+
+msgid "Label updated successfully."
+msgstr "Метка успешно обновлена."
+
+msgid "Cannot delete label because it is in use."
+msgstr "Невозможно удалить метку, потому что она используется."
+
+msgid "Label deleted successfully."
+msgstr "Метка успешно удалена."
