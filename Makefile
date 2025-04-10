@@ -29,7 +29,7 @@ compile-locale:
 	.venv/bin/python hexlet-code/manage.py compilemessages
 
 lint:
-	uv run flake8 hexlet-code/task_manager
+	uv run flake8 hexlet-code/
 
 test:
 	PYTHONPATH=hexlet-code .venv/bin/pytest --ds=task_manager.settings --cov=hexlet-code --cov-report=term-missing

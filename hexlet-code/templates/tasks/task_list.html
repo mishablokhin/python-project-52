@@ -6,6 +6,24 @@
 
   <a class="btn btn-primary mb-3" href="{% url 'task_create' %}">{% trans "Create task" %}</a>
 
+<form method="get" class="card mb-3">
+  <div class="card-body bg-light">
+    {% for field in filter.form %}
+      <div class="mb-3">
+        {% if field.name == 'self_tasks' %}
+          <div>
+            {{ field }} {{ field.label }}
+          </div>
+        {% else %}
+          <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+          {{ field }}
+        {% endif %}
+      </div>
+    {% endfor %}
+    <button type="submit" class="btn btn-primary">{% trans "Show" %}</button>
+  </div>
+</form>
+
   <table class="table table-striped align-middle">
     <thead>
       <tr>
