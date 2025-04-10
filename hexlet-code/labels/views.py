@@ -22,7 +22,8 @@ class LabelCreateView(LoginRequiredMixin, CreateView):
     success_url = reverse_lazy('label_list')
 
     def form_valid(self, form):
-        messages.success(self.request, _('Label created successfully.'), extra_tags='alert-success')
+        messages.success(self.request, _('Label created successfully.'),
+                         extra_tags='alert-success')
         return super().form_valid(form)
 
 
@@ -33,7 +34,8 @@ class LabelUpdateView(LoginRequiredMixin, UpdateView):
     success_url = reverse_lazy('label_list')
 
     def form_valid(self, form):
-        messages.success(self.request, _('Label updated successfully.'), extra_tags='alert-success')
+        messages.success(self.request, _('Label updated successfully.'),
+                         extra_tags='alert-success')
         return super().form_valid(form)
 
 

@@ -26,7 +26,9 @@ class TestUserCRUD:
 
     def test_user_update(self):
         self.client.force_login(self.user)
-        response = self.client.post(reverse('user_update', args=[self.user.pk]), {
+        response = self.client.post(reverse('user_update',
+                                            args=[self.user.pk]),
+                                    {
             'first_name': 'Ivan',
             'last_name': 'Updated',
             'username': 'ivan',

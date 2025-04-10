@@ -9,12 +9,20 @@ class CustomUserCreationForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ('first_name', 'last_name', 'username', 'password1', 'password2')
+        fields = ('first_name',
+                  'last_name',
+                  'username',
+                  'password1',
+                  'password2')
 
 
 class CustomUserChangeForm(forms.ModelForm):
-    password1 = forms.CharField(label="Пароль", widget=forms.PasswordInput(), required=False)
-    password2 = forms.CharField(label="Подтверждение пароля", widget=forms.PasswordInput(), required=False)
+    password1 = forms.CharField(label="Пароль",
+                                widget=forms.PasswordInput(),
+                                required=False)
+    password2 = forms.CharField(label="Подтверждение пароля",
+                                widget=forms.PasswordInput(),
+                                required=False)
 
     class Meta:
         model = User
@@ -29,7 +37,8 @@ class CustomUserChangeForm(forms.ModelForm):
             if password1 != password2:
                 raise forms.ValidationError("Пароли не совпадают.")
             if len(password1) < 3:
-                raise forms.ValidationError("Пароль должен содержать минимум 3 символа.")
+                raise forms.ValidationError("Пароль должен содержать "
+                                            "минимум 3 символа.")
         return cleaned_data
 
     def save(self, commit=True):

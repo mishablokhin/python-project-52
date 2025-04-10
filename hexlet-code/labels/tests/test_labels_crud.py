@@ -13,17 +13,20 @@ class TestLabelsCRUD:
         call_command('loaddata', 'labels_fixture.json')
 
         self.client = client
-        self.user = User.objects.create_user(username='testuser', password='123')
+        self.user = User.objects.create_user(username='testuser',
+                                             password='123')
         self.client.force_login(self.user)
 
     def test_create_label(self):
-        response = self.client.post(reverse('label_create'), {'name': 'Новая метка'})
+        response = self.client.post(reverse('label_create'),
+                                    {'name': 'Новая метка'})
         assert response.status_code == 302
         assert Label.objects.filter(name='Новая метка').exists()
 
     def test_update_label(self):
         label = Label.objects.get(pk=1)
-        response = self.client.post(reverse('label_update', args=[label.pk]), {'name': 'Обновлённая метка'})
+        response = self.client.post(reverse('label_update', args=[label.pk]),
+                                    {'name': 'Обновлённая метка'})
         assert response.status_code == 302
         label.refresh_from_db()
         assert label.name == 'Обновлённая метка'
