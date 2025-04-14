@@ -164,7 +164,7 @@ msgid "Task deleted successfully."
 msgstr "Задача успешно удалена"
 
 msgid "Task could be deleted only by it's author."
-msgstr "Задачу может удалить только её автор"
+msgstr "Задачу может удалить только ее автор"
 
 msgid "Task details"
 msgstr "Просмотр задачи"
