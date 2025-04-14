@@ -51,7 +51,9 @@
                 <button type="submit" class="btn btn-outline-danger">{% trans "Logout" %}</button>
               </form>
             {% else %}
-              <a href="{% url 'login' %}" class="btn btn-outline-primary me-2">{% trans "Login" %}</a>
+              <form action="{% url 'login' %}" method="get" class="d-inline">
+                  <button type="submit" class="btn btn-outline-primary me-2">{% trans "Login" %}</button>
+              </form>
               <a href="{% url 'register' %}" class="btn btn-primary">{% trans "Register" %}</a>
             {% endif %}
           </div>
