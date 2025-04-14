@@ -48,6 +48,15 @@ class UserUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         )
         return redirect('user_list')
 
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        messages.success(
+            self.request,
+            _("Пользователь успешно изменён"),
+            extra_tags='alert-success'
+        )
+        return response
+
 
 class UserDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = User
