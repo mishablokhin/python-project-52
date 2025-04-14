@@ -35,11 +35,8 @@ msgstr "Менеджер задач"
 msgid "Users"
 msgstr "Пользователи"
 
-msgid "Login_Header"
-msgstr "Вход"
-
 msgid "Login"
-msgstr "Войти"
+msgstr "Вход"
 
 msgid "Register"
 msgstr "Регистрация"
