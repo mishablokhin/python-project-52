@@ -28,4 +28,3 @@ class CustomLogoutView(LogoutView):
             extra_tags='alert-info'
         )
         return super().dispatch(request, *args, **kwargs)
-
