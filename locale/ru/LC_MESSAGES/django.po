@@ -197,6 +197,7 @@ msgstr "Невозможно удалить метку, потому что он
 msgid "Label deleted successfully."
 msgstr "Метка успешно удалена"
 
+
 #: hexlet-code/tasks_filter
 msgid "Show"
 msgstr "Показать"
