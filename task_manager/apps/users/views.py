@@ -51,7 +51,7 @@ class UserDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     def handle_no_permission(self):
         messages.error(
             self.request,
-            _("You don't have permission to delete another user."),
+            _("You don't have permission to edit another user."),
             extra_tags='alert-danger'
         )
         return redirect('user_list')
