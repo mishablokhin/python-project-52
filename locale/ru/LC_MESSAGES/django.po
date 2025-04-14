@@ -106,10 +106,10 @@ msgid "Status created successfully."
 msgstr "Статус успешно создан"
 
 msgid "Status updated successfully."
-msgstr "Статус успешно обновлён"
+msgstr "Статус успешно изменен"
 
 msgid "Status deleted successfully."
-msgstr "Статус успешно удалён"
+msgstr "Статус успешно удален"
 
 msgid "Cannot delete status because it is in use."
 msgstr "Невозможно удалить статус, потому что он используется"
@@ -155,16 +155,16 @@ msgid "Delete task"
 msgstr "Удаление задачи"
 
 msgid "Task created successfully."
-msgstr "Задача успешно создана."
+msgstr "Задача успешно создана"
 
 msgid "Task updated successfully."
-msgstr "Задача успешно обновлена."
+msgstr "Задача успешно изменена"
 
 msgid "Task deleted successfully."
-msgstr "Задача успешно удалена."
+msgstr "Задача успешно удалена"
 
 msgid "Task could be deleted only by it's author."
-msgstr "Задачу может удалить только её автор."
+msgstr "Задачу может удалить только её автор"
 
 msgid "Task details"
 msgstr "Просмотр задачи"
