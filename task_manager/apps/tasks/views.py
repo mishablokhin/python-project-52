@@ -70,7 +70,7 @@ class TaskDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     def handle_no_permission(self):
         messages.error(
             self.request,
-            _("Task could be deleted only by its author."),
+            _("Task could be deleted only by it's author."),
             extra_tags='alert-danger'
         )
         return redirect('task_list')
