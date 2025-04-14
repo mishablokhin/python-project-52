@@ -32,4 +32,4 @@ lint:
 	uv run flake8
 
 test:
-	.venv/bin/pytest --ds=task_manager.settings --cov=. --cov-report=term-missing
+	.venv/bin/pytest --cov=. --cov-report=term-missing

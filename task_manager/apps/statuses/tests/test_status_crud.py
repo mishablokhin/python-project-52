@@ -1,6 +1,6 @@
 import pytest
 from django.urls import reverse
-from statuses.models import Status
+from task_manager.apps.statuses.models import Status
 from django.contrib.auth.models import User
 from django.core.management import call_command
 

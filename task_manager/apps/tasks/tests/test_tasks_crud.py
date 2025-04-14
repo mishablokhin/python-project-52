@@ -1,8 +1,8 @@
 import pytest
 from django.urls import reverse
-from tasks.models import Task
+from task_manager.apps.tasks.models import Task
 from django.contrib.auth.models import User
-from statuses.models import Status
+from task_manager.apps.statuses.models import Status
 from django.core.management import call_command
 
 

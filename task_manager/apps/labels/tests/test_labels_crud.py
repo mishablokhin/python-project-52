@@ -1,7 +1,7 @@
 import pytest
 from django.urls import reverse
 from django.contrib.auth.models import User
-from labels.models import Label
+from task_manager.apps.labels.models import Label
 from django.core.management import call_command
 
 
