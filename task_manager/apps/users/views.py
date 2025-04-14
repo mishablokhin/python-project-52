@@ -52,7 +52,7 @@ class UserUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         response = super().form_valid(form)
         messages.success(
             self.request,
-            _("Пользователь успешно изменён"),
+            _("Пользователь успешно изменен"),
             extra_tags='alert-success'
         )
         return response
