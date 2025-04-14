@@ -5,31 +5,31 @@ build:
 	./build.sh
 
 start-debug-local:
-	uv run .venv/bin/python -m gunicorn --chdir hexlet-code --reload --log-level debug task_manager.wsgi
+	uv run .venv/bin/python -m gunicorn --reload --log-level debug task_manager.wsgi
 
 collectstatic:
-	python hexlet-code/manage.py collectstatic --noinput
+	python manage.py collectstatic --noinput
 
 migrate:
-	python hexlet-code/manage.py migrate
+	python manage.py migrate
 
 render-start:
-	.venv/bin/python -m gunicorn --chdir hexlet-code task_manager.wsgi
+	.venv/bin/python -m gunicorn task_manager.wsgi
 
 make-migrations-local:
-	.venv/bin/python hexlet-code/manage.py makemigrations
+	.venv/bin/python manage.py makemigrations
 
 migrate-local:
-	.venv/bin/python hexlet-code/manage.py migrate
+	.venv/bin/python manage.py migrate
 
 collectstatic-local:
-	.venv/bin/python hexlet-code/manage.py collectstatic
+	.venv/bin/python manage.py collectstatic
 
 compile-locale:
-	.venv/bin/python hexlet-code/manage.py compilemessages
+	.venv/bin/python manage.py compilemessages
 
 lint:
-	uv run flake8 hexlet-code/
+	uv run flake8
 
 test:
-	PYTHONPATH=hexlet-code .venv/bin/pytest --ds=task_manager.settings --cov=hexlet-code --cov-report=term-missing
+	.venv/bin/pytest --ds=task_manager.settings --cov=. --cov-report=term-missing
