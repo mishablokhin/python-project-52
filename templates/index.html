@@ -11,10 +11,6 @@
       <p class="col-md-8 fs-4">
         {% trans "This project is a simple web application for managing users, statuses, labels, and tasks. Register, log in, and start organizing your work!" %}
       </p>
-      {% if not user.is_authenticated %}
-        <a href="{% url 'register' %}" class="btn btn-primary btn-lg me-2">{% trans "Register" %}</a>
-        <a href="{% url 'login' %}" class="btn btn-outline-secondary btn-lg">{% trans "Log in" %}</a>
-      {% endif %}
     </div>
   </div>
 {% endblock %}
