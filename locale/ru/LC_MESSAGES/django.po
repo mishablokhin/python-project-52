@@ -186,16 +186,16 @@ msgid "No labels"
 msgstr "Нет меток"
 
 msgid "Label created successfully."
-msgstr "Метка успешно создана."
+msgstr "Метка успешно создана"
 
 msgid "Label updated successfully."
-msgstr "Метка успешно обновлена."
+msgstr "Метка успешно изменена"
 
 msgid "Cannot delete label because it is in use."
 msgstr "Невозможно удалить метку, потому что она используется."
 
 msgid "Label deleted successfully."
-msgstr "Метка успешно удалена."
+msgstr "Метка успешно удалена"
 
 #: hexlet-code/tasks_filter
 msgid "Show"
