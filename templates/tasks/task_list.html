@@ -11,9 +11,10 @@
     {% for field in filter.form %}
       <div class="mb-3">
         {% if field.name == 'self_tasks' %}
-          <div>
-            {{ field }} {{ field.label }}
-          </div>
+        <div class="form-check">
+          {{ field.as_widget }}
+          <label class="form-check-label" for="{{ field.id_for_label }}">{% trans "Only my tasks" %}</label>
+        </div>
         {% else %}
           <label for="{{ field.id_for_label }}">{{ field.label }}</label>
           {{ field }}

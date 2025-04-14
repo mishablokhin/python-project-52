@@ -201,3 +201,6 @@ msgstr "Метка успешно удалена"
 #: hexlet-code/tasks_filter
 msgid "Show"
 msgstr "Показать"
+
+msgid "Only my tasks"
+msgstr "Только свои задачи"
